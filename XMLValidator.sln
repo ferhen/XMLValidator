@@ -5,7 +5,7 @@ VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLValidator.CLI", "XMLValidator.CLI\XMLValidator.CLI.csproj", "{29DA73D8-9053-4737-B262-A28C16DD6E62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLValidator", "XMLValidator\XMLValidator.csproj", "{A526E52F-57D2-4E10-8041-B967F79580D4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLValidator.Core", "XMLValidator\XMLValidator.Core.csproj", "{A526E52F-57D2-4E10-8041-B967F79580D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XMLValidator.Test", "XMLValidator.Test\XMLValidator.Test.csproj", "{D091178D-CFFA-42BF-AB00-3BD219D26E5A}"
 EndProject
