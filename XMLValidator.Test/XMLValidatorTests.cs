@@ -129,7 +129,7 @@ namespace XMLValidator.Test
         public void Leading_Text()
         {
             // Test setup
-            var invalidXML = "leading text<Design hello world</Design>";
+            var invalidXML = "leading text<Design>hello world</Design>";
 
             // Method under test
             var result = validator.DetermineSxml(invalidXML);
@@ -142,7 +142,7 @@ namespace XMLValidator.Test
         public void Trailing_Text()
         {
             // Test setup
-            var invalidXML = "<Design hello world</Design>trailing text";
+            var invalidXML = "<Design>hello world</Design>trailing text";
 
             // Method under test
             var result = validator.DetermineSxml(invalidXML);

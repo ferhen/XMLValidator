@@ -17,7 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\XMLValidator\XMLValidator.Core.csproj" />
+    <ProjectReference Include="..\XMLValidator.Core\XMLValidator.Core.csproj" />
   </ItemGroup>
 
 </Project>

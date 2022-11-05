@@ -68,6 +68,11 @@ namespace XMLValidator.Core
                         break;
                 }
             }
+
+            if (state == State.InnerText)
+            {
+                throw new FormatException("Trailing text is not valid XML");
+            }
         }
 
         private Command GetCommand(char character)
