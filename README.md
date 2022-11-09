@@ -47,8 +47,8 @@ The validator receives the list of Elements and uses a stack to decide if the in
 input: "<Design><Code>hello world</Code></Design>"
 
 <Design>   <Code>       </Code>       </Design>
-   [] -> [<Design>] -> [<Design>] -> [<Design>] -> []
-                       [ <Code> ]
+   [] -> [<Design>] -> [ <Code> ] -> [<Design>] -> []
+                       [<Design>]
 
 output: true
 explanation: stack is empty
@@ -58,8 +58,8 @@ explanation: stack is empty
 input: "<Design><Code>hello world</Code></Design><People>"
 
 <Design>   <Code>       </Code>       </Design>     <People>
-   [] -> [<Design>] -> [<Design>] -> [<Design>] -> [<People>]
-                       [ <Code> ]
+   [] -> [<Design>] -> [ <Code> ] -> [<Design>] -> [<People>]
+                       [<Design>]
 
 output: false
 explanation: stack is not empty
