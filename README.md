@@ -42,7 +42,7 @@ The FSM is defined as follows.
 ![StateMachine](/images/element-parser-state-machine.png)
 
 ## Validator
-The validator receives the list of Elements and uses a stack to decide if the input is valid. Elements are stored in the stack if they have the type Opening. When a matching element with type Closing is received, that element is removed from the stack, which guarantees the nesting order of the elements. If a new element that doesn't match the element at the top of the stack, the XML is invalid. After all elements are processed, if there are no elements left in the stack, the XML is valid.
+The validator receives the list of Elements and uses a stack to decide if the input is valid. Elements are stored in the stack if they have the type Opening. When a matching element with type Closing is received, that element is removed from the stack, which guarantees the nesting order of the elements. If a new element, that doesn't match the element at the top of the stack, is received, the XML is invalid. After all elements are processed, if there are no elements left in the stack, the XML is valid.
 ```javascript
 input: "<Design><Code>hello world</Code></Design>"
 
